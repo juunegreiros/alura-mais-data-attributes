@@ -1,0 +1,40 @@
+.hide {
+  display: none;
+}
+
+.container {
+  margin: 50px 200px;
+}
+
+.contents {
+  border: 
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs button {
+  background-color: #fff;
+  border: 2px solid #E67817;
+  color: #E67817;
+  cursor: pointer;
+  flex-grow: 1;
+  font-size: 1.25rem;
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: all .5s;
+}
+
+.tabs button.ativa {
+  color: #fff;
+  background-color: #E67817;
+}
+
+.contents {
+  border: 2px solid #E67817;
+  min-height: 300px;
+  padding: 20px;
+}
