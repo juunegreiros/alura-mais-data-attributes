@@ -1,7 +1,6 @@
 (() => { 
   const tabs = document.querySelectorAll('[data-tab]')
 
-
   const inativaTabs = () => {
     tabs.forEach(tab => tab.classList.remove('ativa'))
   }
@@ -24,13 +23,16 @@
     tab => addEventListener('click', e => {
       const tabSelecionada = e.target
       const tabNumero = tabSelecionada.dataset.tab
-      const conteudoCorrespondente = document.querySelector(`[data-content="${tabNumero}"]`)
-      
-      inativaTabs()
-      escondeConteudos()
 
-      ativaTab(tabSelecionada)
-      mostraConteudo(conteudoCorrespondente)
+      if(tabNumero) {
+        const conteudoCorrespondente = document.querySelector(`[data-content="${tabNumero}"]`)
+      
+        inativaTabs()
+        escondeConteudos()
+  
+        ativaTab(tabSelecionada)
+        mostraConteudo(conteudoCorrespondente)
+      }
     })
   )
 

@@ -10,17 +10,27 @@
 <body>
   <div class="container">
     <div class="tabs">
-      <button class="ativa" data-tab="1">Tab1</button>
-      <button data-tab="2">Tab2</button>
-      <button data-tab="3">Tab3</button>
-      <button data-tab="4">Tab4</button>
+      <button class="ativa" data-tab="entrar">Entrar</button>
+      <button data-tab="cadastrar">Cadastre-se</button>
     </div>
 
     <div class="contents">
-      <div data-content="1">Conteúdo 1</div>
-      <div class="hide" data-content="2">Conteúdo 2</div>
-      <div class="hide" data-content="3">Conteúdo 3</div>
-      <div class="hide" data-content="4">Conteúdo 4</div>
+      <div data-content="entrar">
+        <form class="form">
+          <input type="text" name="email" placeholder="Seu e-mail">
+          <input type="password" name="senha" placeholder="Sua senha">
+          <button>Entrar</button>
+        </form>
+      </div>
+      <div class="hide" data-content="cadastrar">
+        <form class="form">
+          <input type="text" name="email" placeholder="Seu e-mail">
+          <input type="password" name="senha" placeholder="Sua senha">
+          <input type="password" name="senha" placeholder="Repita sua senha">
+          <button>Cadastrar</button>
+        </form>
+      </div>
+      
     </div>
   </div>
 
