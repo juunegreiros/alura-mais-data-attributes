@@ -20,7 +20,7 @@
   }
 
   tabs.forEach(
-    tab => addEventListener('click', e => {
+    tab => tab.addEventListener('click', e => {
       const tabSelecionada = e.target
       const tabNumero = tabSelecionada.dataset.tab
 
